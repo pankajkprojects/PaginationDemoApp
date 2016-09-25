@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="100">-->
+
+    <ImageView
+        android:id="@+id/paginationview_iv_home"
+        android:src="@drawable/ic_arrow_home"
+        style="@style/childViews"/>
+
+    <ImageView
+        android:id="@+id/paginationview_iv_previous"
+        android:src="@drawable/ic_singlearrow_left"
+        style="@style/childViews"/>
+
+    <TextView
+        android:id="@+id/paginationview_tv_pagenumber"
+        android:gravity="center"
+        style="@style/childViews"/>
+
+    <ImageView
+        android:id="@+id/paginationview_iv_next"
+        android:src="@drawable/ic_singlearrow_right"
+        style="@style/childViews"/>
+
+    <ImageView
+        android:id="@+id/paginationview_iv_last"
+        android:src="@drawable/ic_arrow_farend"
+        style="@style/childViews"/>
+
+</merge>

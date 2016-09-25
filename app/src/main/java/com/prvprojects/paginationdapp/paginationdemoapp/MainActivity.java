@@ -1,17 +1,29 @@
 package com.prvprojects.paginationdapp.paginationdemoapp;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.prvprojects.paginationdapp.paginationview.PaginationView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        PaginationView temp = (PaginationView) findViewById(R.id.activity_main_paginationview);
+        temp.setPageSelectedInterface(new PaginationView.PageSelectedInterface() {
+            @Override
+            public void onPageChangedListener(int newCurrentPageNumber) {
+                Toast.makeText(MainActivity.this, "Page changed", Toast.LENGTH_SHORT).show();
+            }
+        });
+        temp.setTotalNumberOfPages(10);
+
     }
 
     @Override

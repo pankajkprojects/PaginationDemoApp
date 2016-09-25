@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="weightsum_rootview">100</integer>
+    <integer name="layoutweight_childview">20</integer>
+
+    <dimen name="childview_leftpadding">2dp</dimen>
+    <dimen name="childview_rightpadding">2dp</dimen>
+    <dimen name="childview_toppadding">16dp</dimen>
+    <dimen name="childview_bottompadding">16dp</dimen>
+
+
+</resources>

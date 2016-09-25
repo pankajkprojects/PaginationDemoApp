@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="childViews">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@integer/layoutweight_childview</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/childview_toppadding</item>
+        <item name="android:paddingBottom">@dimen/childview_bottompadding</item>
+        <item name="android:paddingLeft">@dimen/childview_leftpadding</item>
+        <item name="android:paddingRight">@dimen/childview_rightpadding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+</resources>
